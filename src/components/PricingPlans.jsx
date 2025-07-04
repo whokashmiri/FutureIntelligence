@@ -42,7 +42,7 @@ export default function PricingPlans() {
           >
             {t("monthly")}
           </button>
-          <button
+          {/* <button
             className={`px-6 py-2 text-sm font-medium ${
               billing === "quarterly"
                 ? "bg-red-600 text-white"
@@ -51,7 +51,7 @@ export default function PricingPlans() {
             onClick={() => setBilling("quarterly")}
           >
             {t("quarterly")}
-          </button>
+          </button> */}
         </div>
 
         {/* Pricing Cards */}
@@ -82,7 +82,7 @@ export default function PricingPlans() {
                 {plan.price ? (
                   <div className="text-3xl font-bold mb-4">
                     ${plan.price}
-                    <span className="text-base text-gray-500"> /month</span>
+                    <span className="text-base text-gray-500">/{t("month")}</span>
                   </div>
                 ) : (
                   <h4 className="text-2xl font-bold text-gray-800 mb-4">
