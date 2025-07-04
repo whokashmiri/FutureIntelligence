@@ -8,18 +8,16 @@ export default function PricingPlans() {
   const plans = [
     {
       key: "pro",
-      price: 2500,
       isCustom: false
     },
     {
       key: "proPlus",
-      price: 3800,
       highlighted: true,
       isCustom: false
     },
     {
       key: "custom",
-      price: null,
+      price:"null",
       isCustom: true
     }
   ];
@@ -79,16 +77,20 @@ export default function PricingPlans() {
                   <p className="text-sm text-gray-500">{planData.desc}</p>
                 </div>
 
-                {plan.price ? (
-                  <div className="text-3xl font-bold mb-4">
-                    ${plan.price}
-                    <span className="text-base text-gray-500">/{t("month")}</span>
-                  </div>
-                ) : (
-                  <h4 className="text-2xl font-bold text-gray-800 mb-4">
-                    {planData.label}
-                  </h4>
-                )}
+  {planData.price !== null ? (
+  <div className="text-3xl font-bold mb-4">
+    <span className="inline-block">
+      <span className="text-xs text-gray-700">ر.س </span>
+      {planData.price}
+    </span>
+    <span className="text-base text-gray-500">/{t("month")}</span>
+  </div>
+) : (
+  <h4 className="text-2xl font-bold text-gray-800 mb-4">
+    {planData.label}
+  </h4>
+)}
+
 
                 <ul className="text-sm text-gray-700 space-y-2 mb-6">
                   {planData.features.map((feature, fIdx) => (

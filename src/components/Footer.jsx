@@ -6,18 +6,26 @@ import {
   Twitter,
   Youtube,
 } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
+  const productItems = t("footer.productItems", { returnObjects: true });
+  const companyItems = t("footer.companyItems", { returnObjects: true });
+  const exploreItems = t("footer.exploreItems", { returnObjects: true });
+  const partnerItems = t("footer.partnerItems", { returnObjects: true });
+
   return (
-    <footer className="bg-white text-gray-700 border-t">
+    <footer className="bg-white text-gray-700 border-t" dir={t("dir")}>
       <div className="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-5 gap-8 text-sm">
         {/* Logo & Social */}
         <div className="col-span-2 space-y-4">
           <div className="flex items-center gap-2 font-semibold text-lg">
             <span className="text-blue-600">◆</span>
-            <span>Future Intelligence & Investement</span>
+            <span>{t("footer.companyName")}</span>
           </div>
-          <p className="text-gray-500">Hassle-free platform for Inspection , Valuation and Automation.</p>
+          <p className="text-gray-500">{t("footer.tagline")}</p>
 
           {/* Social Icons */}
           <div className="flex items-center space-x-4">
@@ -30,62 +38,63 @@ export default function Footer() {
 
           <div className="mt-2">
             <span className="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded-full">
-              ● All Systems Will Be Operational Soon
+              {t("footer.systemsStatus")}
             </span>
           </div>
         </div>
 
         {/* Product */}
         <div>
-          <h4 className="font-semibold mb-3">Product</h4>
+          <h4 className="font-semibold mb-3">{t("footer.sections.product")}</h4>
           <ul className="space-y-1 text-gray-600">
-            <li className="flex items-center gap-2">
-              Headless Valuation
-              <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">
-                New
-              </span>
-            </li>
-            <li>Pricing</li>
-            <li>Open source Starter-kit</li>
+            {productItems.map(({ label, badge }, idx) => (
+              <li key={idx} className="flex items-center gap-2">
+                {label}
+                {badge && (
+                  <span className="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full">
+                    {badge}
+                  </span>
+                )}
+              </li>
+            ))}
           </ul>
         </div>
 
         {/* Company */}
         <div>
-          <h4 className="font-semibold mb-3">Company</h4>
+          <h4 className="font-semibold mb-3">{t("footer.sections.company")}</h4>
           <ul className="space-y-1 text-gray-600">
-            <li>About Future Intelligence & Investement</li>
-            <li>Careers</li>
-            <li>Logos and Media</li>
-            <li>Changelog</li>
-            <li>Feature Requests</li>
+            {companyItems.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
           </ul>
         </div>
 
         {/* Explore */}
         <div>
-          <h4 className="font-semibold mb-3">Explore</h4>
+          <h4 className="font-semibold mb-3">{t("footer.sections.explore")}</h4>
           <ul className="space-y-1 text-gray-600">
-            <li>My feed</li>
-            <li>Case studies</li>
-            <li>Referral Program</li>
+            {exploreItems.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
           </ul>
 
-          <h4 className="font-semibold mt-6 mb-3">Partner with us</h4>
+          <h4 className="font-semibold mt-6 mb-3">{t("footer.sections.partner")}</h4>
           <ul className="space-y-1 text-gray-600">
-            <li>Host a Hackathon</li>
+            {partnerItems.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
           </ul>
-
         </div>
       </div>
 
       {/* Footer Bottom */}
       <div className="border-t text-xs text-gray-400 py-4 px-6 flex flex-col md:flex-row justify-between max-w-7xl mx-auto">
-        <p>© 2025 Developed By Future Intelligence & Investiment</p>
+        <p>{t("footer.footerBottom.copyright")}</p>
         <div className="flex space-x-4 mt-2 md:mt-0">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms</a>
-          <a href="#">Code of conduct</a>
+          <a href="#">{t("footer.footerBottom.privacyPolicy")}</a>
+          <a href="#">{t("footer.footerBottom.terms")}</a>
+          <a href="#">{t("footer.footerBottom.codeOfConduct")}</a>
         </div>
       </div>
     </footer>

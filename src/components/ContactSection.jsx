@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -9,19 +10,21 @@ export default function ContactSection() {
     message: "",
   });
 
+  const { t } = useTranslation();
+
   return (
-    <section className="w-full  py-16 px-6 bg-white grid md:grid-cols-2 shadow-lg rounded-lg overflow-hidden">
+    <section className="w-full py-16 px-6 bg-white grid md:grid-cols-2 shadow-lg rounded-lg overflow-hidden">
       {/* Left Info */}
       <div className="p-10 bg-white space-y-6">
         <div>
-          <h2 className="text-3xl font-semibold text-gray-800 mb-2">Contact Us</h2>
+          <h2 className="text-3xl font-semibold text-gray-800 mb-2">{t("contact1.title")}</h2>
           <p className="text-gray-600">
-            Whether you're a member of the public or a business who would love to be a partner,{" "}
-            <a href="#" className="text-red-200 font-medium hover:underline">come and talk to us!</a>
+            {t("contact1.intro1")}{" "}
+            <a href="#" className="text-red-500 font-medium hover:underline">
+              {t("contact1.intro2")}
+            </a>
           </p>
-          <p className="text-gray-600 mt-4">
-            We'd love to hear about your medical needs and how we can best tailor our services to support you.
-          </p>
+          <p className="text-gray-600 mt-4">{t("contact1.intro3")}</p>
         </div>
 
         {/* Contact Details */}
@@ -39,8 +42,8 @@ export default function ContactSection() {
           <div className="flex items-start gap-3 text-teal-700">
             <MapPin size={16} className="mt-1" />
             <div>
-              <p className="text-gray-800 font-semibold">Central Riyadh</p>
-              <p className="text-gray-600">Dhahrat Laban<br />Every day from 9 am to 6 pm</p>
+              <p className="text-gray-800 font-semibold">{t("contact1.location")}</p>
+              <p className="text-gray-600 whitespace-pre-line">{t("contact1.address")}</p>
             </div>
           </div>
         </div>
@@ -48,10 +51,10 @@ export default function ContactSection() {
 
       {/* Right Form */}
       <div className="bg-gradient-to-br from-white to-red-200 p-10 rounded-3xl shadow-orange-400">
-        <h3 className="text-lg font-semibold text-gray-800 mb-6">Send us a message</h3>
+        <h3 className="text-lg font-semibold text-gray-800 mb-6">{t("contact1.formTitle")}</h3>
         <form className="space-y-4">
           <div>
-            <label className="block text-sm font-medium text-gray-700">Name</label>
+            <label className="block text-sm font-medium text-gray-700">{t("contact1.name")}</label>
             <input
               type="text"
               className="w-full border border-gray-300 px-4 py-2 rounded-md"
@@ -61,7 +64,7 @@ export default function ContactSection() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">Email</label>
+            <label className="block text-sm font-medium text-gray-700">{t("contact1.emailLabel")}</label>
             <input
               type="email"
               className="w-full border border-gray-300 px-4 py-2 rounded-md"
@@ -71,7 +74,7 @@ export default function ContactSection() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">Phone</label>
+            <label className="block text-sm font-medium text-gray-700">{t("contact1.phoneLabel")}</label>
             <input
               type="text"
               className="w-full border border-gray-300 px-4 py-2 rounded-md"
@@ -81,7 +84,7 @@ export default function ContactSection() {
           </div>
 
           <div>
-            <label className="block text-sm font-medium text-gray-700">Message</label>
+            <label className="block text-sm font-medium text-gray-700">{t("contact1.message")}</label>
             <textarea
               rows="4"
               maxLength={150}
@@ -90,7 +93,7 @@ export default function ContactSection() {
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             ></textarea>
             <div className="text-xs text-right text-gray-400">
-              {formData.message.length}/150
+              {t("contact1.chars", { count: formData.message.length })}
             </div>
           </div>
 
@@ -98,7 +101,7 @@ export default function ContactSection() {
             type="submit"
             className="bg-red-700 text-white px-8 py-3 rounded-md hover:bg-red-800 transition"
           >
-            Send Message
+            {t("contact1.submit")}
           </button>
         </form>
       </div>

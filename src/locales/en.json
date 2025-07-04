@@ -61,6 +61,7 @@
     "pro": {
       "title": "Pro",
       "desc": "Ideal for those who’ve already got their website up and running and are seeking assistance to enhance and update it further.",
+      "price": 2500,
       "features": [
         "3–5 day turnaround",
         "Native Development",
@@ -73,6 +74,7 @@
     "proPlus": {
       "title": "Pro Plus",
       "desc": "Ideal if you want to build or scale your website fast, with the strategy calls included.",
+            "price": 3800,
       "features": [
         "1–3 day turnaround",
         "Monthly strategy call",
@@ -98,5 +100,65 @@
       "button": "Book a Call",
       "label": "Let’s Talk!"
     }
+
+  },
+  
+  "contact1": {
+    "title": "Contact Us",
+    "intro1": "Whether you're a member of the public or a business who would love to be a partner,",
+    "intro2": "come and talk to us!",
+    "intro3": "We'd love to hear about your medical needs and how we can best tailor our services to support you.",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Central Riyadh",
+    "address": "Dhahrat Laban\nEvery day from 9 am to 6 pm",
+    "formTitle": "Send us a message",
+    "name": "Name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "message": "Message",
+    "submit": "Send Message",
+    "chars": "{{count}}/150"
+  },
+  
+  "footer": {
+    "companyName": "Future Intelligence & Investment",
+    "tagline": "Hassle-free platform for Inspection, Valuation and Automation.",
+    "systemsStatus": "All Systems Will Be Operational Soon",
+    "sections": {
+      "product": "Product",
+      "company": "Company",
+      "explore": "Explore",
+      "partner": "Partner with us"
+    },
+    "productItems": [
+      { "label": "Headless Valuation", "badge": "New" },
+      { "label": "Pricing" },
+      { "label": "Open source Starter-kit" }
+    ],
+    "companyItems": [
+      "About Future Intelligence & Investment",
+      "Careers",
+      "Changelog",
+      "Feature Requests"
+    ],
+    "exploreItems": [
+      "My feed",
+      "Case studies",
+      "Referral Program"
+    ],
+    "partnerItems": [
+      "Host a Hackathon"
+    ],
+    "footerBottom": {
+      "copyright": "© 2025 Developed By Future Intelligence & Investment",
+      "privacyPolicy": "Privacy Policy",
+      "terms": "Terms",
+      "codeOfConduct": "Code of conduct"
+    }
   }
+
+
+
+
 }
