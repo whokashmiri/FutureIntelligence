@@ -1,0 +1,100 @@
+{
+  "home": "Home",
+  "work": "Work",
+  "services": "Services",
+  "pricing": "Pricing",
+  "blog": "Blog",
+  "contact": "Contact",
+  "toggleLanguage": "AR",
+  "breadcrumb": "Home / About",
+
+  "heading": "Where intelligence drives innovation, and the future is built today",
+  "paragraph1": "At Future Intelligence and Investment, we are redefining the possibilities of the digital age through smart IT solutions, advanced automation, cutting-edge artificial intelligence, and strategic investment. As a hub of innovation, we empower organizations to accelerate digital transformation, optimize performance, and make data-driven decisions with confidence. From intelligent automation to AI-powered platforms and forward-looking investment strategies, we help businesses evolve, adapt, and lead in a world driven by continuous innovation.",
+  "paragraph2": "At FI & I we are committed to revolutionizing the IT industry with innovative, sustainable, and cost-effective solutions. With a proven track record of delivering exceptional projects, we combine state-of-the-art technology, skilled expertise, and customer-centric approaches to bring visions to life.",
+
+  "projects": "Complete Projects",
+  "team": "Team Members",
+  "reviews": "Client Reviews",
+  "awards": "Winning Awards",
+
+  "ourProducts": "Our Products",
+  "category1": "Inspection",
+  "category2": "Valuation",
+  "category3": "Automation",
+  "title1": "Comprehensive Inspection & Evaluation",
+  "title2": "Accurate and Insightful Valuation Services",
+  "title3": "Intelligent Workflow Automation",
+  "desc1": "Ensuring quality, safety, and compliance through expert assessments",
+  "desc2": "Empowering your decisions with data-driven value assessments",
+  "desc3": "Streamlining operations to boost efficiency and reduce manual effort",
+
+  "headingt": "Our team is here for you\nevery step of the way",
+  "paragraph": "Our experienced and skilled team is passionate about delivering innovative digital solutions while ensuring your success every step of the way.",
+  "button": "Explore More",
+  "experience": "Years experience",
+  "clients": "Satisfied clients",
+
+  "ourServices": "Our Services",
+  "productDesign": "Product design",
+  "productTags": "SaaS Platform • Web Platform • Mobile App",
+  "productDesc": "By working hand in hand, we'll turn your ideas into real, market-ready products. With a focus on your unique needs, we'll blend aesthetics and usability. Let's chat about how we can bring your ideas to life.",
+  "productdiscuss": "DISCUSS PROJECT",
+
+  "uxDesign": "UX Design",
+  "uxTags": "UX Audit • Analysis • Research",
+  "uxDescription": "We create visually compelling and user-friendly websites that reflect your\nbrand’s identity and engage your target audience. Our designs are tailored to provide seamless navigation and a memorable user experience.",
+  "discuss": "DISCUSS PROJECT",
+
+  "development": "Development",
+  "devTags": "Net Core • PHP • React • Node.js • Angular",
+  "devDesc": "Our development team brings your digital projects to life with robust, scalable, and high-performing solutions. Using the latest technologies, we ensure that your applications are built to meet your business goals and provide a seamless experience for users.",
+  "devdiscuss": "DISCUSS PROJECT",
+
+  "title": "Choose your right plan!",
+  "subtitle": "Select from best plans, ensuring a perfect match. Need more or less? Customize your subscription for a seamless fit!",
+  "monthly": "Monthly",
+  "quarterly": "Quarterly (save 10%)",
+
+  "plans": {
+    "pro": {
+      "title": "Pro",
+      "desc": "Ideal for those who’ve already got their website up and running and are seeking assistance to enhance and update it further.",
+      "features": [
+        "3–5 day turnaround",
+        "Native Development",
+        "Task delivered one-by-one",
+        "Dedicated dashboard",
+        "Updates via Dashboard & Slack"
+      ],
+      "button": "Get started"
+    },
+    "proPlus": {
+      "title": "Pro Plus",
+      "desc": "Ideal if you want to build or scale your website fast, with the strategy calls included.",
+      "features": [
+        "1–3 day turnaround",
+        "Monthly strategy call",
+        "Commercial license",
+        "Native Development",
+        "Tasks delivered one-by-one",
+        "Dedicated dashboard",
+        "Updates via Dashboard & Slack"
+      ],
+      "button": "Get started"
+    },
+    "custom": {
+      "title": "Custom",
+      "desc": "If these plans don’t fit, let’s create one that suits. Customize your subscription for a perfect fit, bigger or smaller!",
+      "features": [
+        "Everything in design & development",
+        "Strategy workshop",
+        "Priority support",
+        "Multiple tasks at once",
+        "Ongoing autonomous A/B testing",
+        "Advanced custom development"
+      ],
+      "button": "Book a Call",
+      "label": "Let’s Talk!"
+    }
+  }
+}
