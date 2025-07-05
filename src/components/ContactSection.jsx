@@ -13,7 +13,7 @@ export default function ContactSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="w-full py-16 px-6 bg-white grid md:grid-cols-2 shadow-lg rounded-lg overflow-hidden">
+    <section className="w-full py-16 mt-2 px-6 bg-white grid md:grid-cols-2 shadow-lg rounded-lg overflow-hidden">
       {/* Left Info */}
       <div className="p-10 bg-white space-y-6">
         <div>

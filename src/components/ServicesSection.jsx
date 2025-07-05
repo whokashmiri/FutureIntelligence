@@ -29,7 +29,7 @@ export default function ServicesSection() {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-white py-16 px-6 md:px-20 rounded-3xl shadow-sm text-start">
+    <section className="bg-white mt-12 py-16 px-6 md:px-20 rounded-3xl shadow-sm text-start">
       <h1 className="text-4xl font-bold mb-12 text-gray-900">
         {t("ourServices")}
       </h1>

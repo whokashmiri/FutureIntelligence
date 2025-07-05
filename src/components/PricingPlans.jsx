@@ -23,7 +23,7 @@ export default function PricingPlans() {
   ];
 
   return (
-    <section className="bg-gradient-to-br from-red-50 to-white py-16 px-4 md:px-20">
+    <section className="bg-gradient-to-br mt-12 from-red-50 to-white py-16 px-4 md:px-20">
       <div className="max-w-6xl mx-auto text-start">
         <h2 className="text-4xl font-bold mb-2">{t("title")}</h2>
         <p className="text-gray-600 mb-8">{t("subtitle")}</p>

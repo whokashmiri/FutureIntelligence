@@ -8,7 +8,7 @@ export default function OurProducts() {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-white px-6 py-16 md:px-20">
+    <section className="bg-white mt-12 px-6 py-16 md:px-20">
       <h1 className="text-4xl font-bold mb-12 text-gray-900">{t("ourProducts")}</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
 
