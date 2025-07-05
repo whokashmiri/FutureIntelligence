@@ -1,105 +1,108 @@
 {
-  "home": "Home",
-  "work": "Work",
-  "services": "Services",
-  "pricing": "Pricing",
-  "blog": "Blog",
-  "contact": "Contact",
-  "toggleLanguage": "AR",
-  "breadcrumb": "Home / About",
+"home": "Home",
+"work": "Work",
+"services": "Services",
+"pricing": "Pricing",
+"blog": "Blog",
+"contact": "Contact Us",
+"toggleLanguage": "AR",
+"breadcrumb": "Home / About Us",
+"heading": "Where intelligence drives innovation, and the future is shaped today",
+"paragraph1": "At Future Intelligence, we redefine the future of business by integrating artificial intelligence, advanced automation, and smart IT solutions with strategic investment insights. We are an innovation incubator enabling organizations to accelerate digital transformation, optimize performance, and make data-driven decisions.",
+"paragraph2": "From intelligent automation to AI-powered platforms, we innovate solutions that help businesses adapt, grow, and lead in a rapidly evolving world driven by innovation. At Future Intelligence, we are committed to transforming the tech sector by delivering sustainable, efficient, and scalable solutions backed by domain expertise and a client-centric approach — turning ambitions into tangible reality.",
+"projects": "Completed Projects",
+"team": "Team Members",
+"reviews": "Client Reviews",
+"awards": "Awards Won",
 
-  "heading": "Where intelligence drives innovation, and the future is built today",
-  "paragraph1": "At Future Intelligence and Investment, we are redefining the possibilities of the digital age through smart IT solutions, advanced automation, cutting-edge artificial intelligence, and strategic investment. As a hub of innovation, we empower organizations to accelerate digital transformation, optimize performance, and make data-driven decisions with confidence. From intelligent automation to AI-powered platforms and forward-looking investment strategies, we help businesses evolve, adapt, and lead in a world driven by continuous innovation.",
-  "paragraph2": "At FI & I we are committed to revolutionizing the IT industry with innovative, sustainable, and cost-effective solutions. With a proven track record of delivering exceptional projects, we combine state-of-the-art technology, skilled expertise, and customer-centric approaches to bring visions to life.",
+"ourProducts": "Our Products",
+"category1": "Inventory & Inspection",
+"category2": "Valuation",
+"category3": "Automation",
+"title1": "Asset Inventory, Counting, and Inspection",
+"title2": "Movable Asset Valuation Services Aligned with International Standards",
+"title3": "Smart Workflow Automation",
+"desc1": "Ensure quality, safety, and compliance through professional inspections",
+"desc2": "Empower your decisions with data-driven valuations",
+"desc3": "Streamline processes to boost efficiency and reduce manual effort",
 
-  "projects": "Complete Projects",
-  "team": "Team Members",
-  "reviews": "Client Reviews",
-  "awards": "Winning Awards",
+"headingt": "Our team is here for you\nEvery step of the way",
+"paragraph": "Our experienced and skilled team is passionate about delivering innovative digital solutions while ensuring your success at every stage.",
+"button": "Discover More",
+"experience": "Years of Experience",
+"clients": "Satisfied Clients",
 
-  "ourProducts": "Our Products",
-  "category1": "Inspection",
-  "category2": "Valuation",
-  "category3": "Automation",
-  "title1": "Comprehensive Inspection & Evaluation",
-  "title2": "Accurate and Insightful Valuation Services",
-  "title3": "Intelligent Workflow Automation",
-  "desc1": "Ensuring quality, safety, and compliance through expert assessments",
-  "desc2": "Empowering your decisions with data-driven value assessments",
-  "desc3": "Streamlining operations to boost efficiency and reduce manual effort",
+"ourServices" : "Our Services",
+"productDesign": "Product Design",
+"productTags": "SaaS Systems • Web Platforms • Mobile Apps",
+"productDesc": "Through effective collaboration, we work with you to turn your ideas into real, market-ready products. We pay special attention to your unique needs, delivering solutions that combine beautiful design with usability. We're happy to connect and discuss how we can bring your vision to life.",
+"productdiscuss": "Request your free consultation",
 
-  "headingt": "Our team is here for you\nevery step of the way",
-  "paragraph": "Our experienced and skilled team is passionate about delivering innovative digital solutions while ensuring your success every step of the way.",
-  "button": "Explore More",
-  "experience": "Years experience",
-  "clients": "Satisfied clients",
+"uxDesign": "User Experience Design",
+"uxTags": "UX Review • Analysis • Research",
+"uxDesc": "We offer visually appealing and user-friendly website designs that professionally reflect your brand identity. We ensure a seamless and standout user experience that attracts and engages your target audience.",
+"discuss": "Request your free consultation",
 
-  "ourServices": "Our Services",
-  "productDesign": "Product design",
-  "productTags": "SaaS Platform • Web Platform • Mobile App",
-  "productDesc": "By working hand in hand, we'll turn your ideas into real, market-ready products. With a focus on your unique needs, we'll blend aesthetics and usability. Let's chat about how we can bring your ideas to life.",
-  "productdiscuss": "DISCUSS PROJECT",
+"development": "Development",
+"devTags": ".NET Core • PHP • React • Node.js • Angular",
+"devDesc": "We develop high-performance, beautifully designed websites that reflect your brand identity and engage your audience. We provide advanced technical solutions that ensure smooth and effective user experiences across all devices.",
+"devdiscuss": "Request your free consultation",
 
-  "uxDesign": "UX Design",
-  "uxTags": "UX Audit • Analysis • Research",
-  "uxDescription": "We create visually compelling and user-friendly websites that reflect your\nbrand’s identity and engage your target audience. Our designs are tailored to provide seamless navigation and a memorable user experience.",
-  "discuss": "DISCUSS PROJECT",
+"month": "Month",
 
-  "development": "Development",
-  "devTags": "Net Core • PHP • React • Node.js • Angular",
-  "devDesc": "Our development team brings your digital projects to life with robust, scalable, and high-performing solutions. Using the latest technologies, we ensure that your applications are built to meet your business goals and provide a seamless experience for users.",
-  "devdiscuss": "DISCUSS PROJECT",
+"title": "Choose the plan that's right for you!",
+"subtitle": "Select from the best plans for a perfect fit. Need more or less? Customize your subscription to fit your needs seamlessly.",
+"monthly": "Monthly",
+"quarterly": "Quarterly (Save 10%)",
 
-  "month":"Month",
-
-  "title": "Choose your right plan!",
-  "subtitle": "Select from best plans, ensuring a perfect match. Need more or less? Customize your subscription for a seamless fit!",
-  "monthly": "Monthly",
-  "quarterly": "Quarterly (save 10%)",
 
   "plans": {
-    "pro": {
-      "title": "Pro",
-      "desc": "Ideal for those who’ve already got their website up and running and are seeking assistance to enhance and update it further.",
-      "price": 2500,
-      "features": [
-        "3–5 day turnaround",
-        "Native Development",
-        "Task delivered one-by-one",
-        "Dedicated dashboard",
-        "Updates via Dashboard & Slack"
-      ],
-      "button": "Get started"
-    },
-    "proPlus": {
-      "title": "Pro Plus",
-      "desc": "Ideal if you want to build or scale your website fast, with the strategy calls included.",
-            "price": 3800,
-      "features": [
-        "1–3 day turnaround",
-        "Monthly strategy call",
-        "Commercial license",
-        "Native Development",
-        "Tasks delivered one-by-one",
-        "Dedicated dashboard",
-        "Updates via Dashboard & Slack"
-      ],
-      "button": "Get started"
-    },
+  "pro": {
+  "title": "Free Package",
+  "desc": "This package serves valuation companies, collaborating valuers, accounting firms, and inventory service providers.",
+  "features": [
+    "Delivery within 3–5 days",
+    "1–50 assets",
+    "Limited package",
+    "Custom dashboard",
+    "Updates via dashboard and Slack"
+  ],
+  "button": "Get Started"
+},
+
+
+
+   "proPlus": {
+  "title": "Inventory & Inspection Package",
+  "desc": "This package serves valuation companies, collaborating valuers, accounting firms, and inventory service providers.",
+  "features": [
+    "Delivery within 1–3 days",
+    "Unlimited number of assets",
+    "Native development",
+    "Covers everything you need for inventory and inspection",
+    "Custom dashboard",
+    "Updates via dashboard and Slack"
+  ],
+  "button": "Get Started"
+},
+
+
+
     "custom": {
-      "title": "Custom",
-      "desc": "If these plans don’t fit, let’s create one that suits. Customize your subscription for a perfect fit, bigger or smaller!",
-      "features": [
-        "Everything in design & development",
-        "Strategy workshop",
-        "Priority support",
-        "Multiple tasks at once",
-        "Ongoing autonomous A/B testing",
-        "Advanced custom development"
-      ],
-      "button": "Book a Call",
-      "label": "Let’s Talk!"
-    }
+  "title": "Resident Package",
+  "desc": "This package is designed for valuation companies and certified valuers to assess assets accurately according to international standards.",
+  "features": [
+    "Everything in Design and Development",
+    "Strategy Workshop",
+    "Priority Support",
+    "Multiple tasks at the same time",
+    "Includes everything in the Inspection and Wall Package plus Valuation",
+    "Advanced Custom Development"
+  ],
+  "button": "Get Started",
+  "label": "Let’s Talk!"
+}
+
 
   },
   

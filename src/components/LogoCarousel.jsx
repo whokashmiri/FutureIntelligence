@@ -10,11 +10,12 @@ import Rega from "../assets/REGA_LOGO.svg";
 import Taqeem from "../assets/Taqeem.svg";
 
 const logos = [
-  { icon: Rajhi, name: "Al-Rajhi Bank" },
-  { icon: Alina, name: "Alinma Bank" },
-  { icon: Logo, name: "Ministry of Justice" },
   { icon: Rega, name: "Real Estate General Authority" },
+  { icon: Rajhi, name: "Al-Rajhi Bank" },
+  { icon: Logo, name: "The Ministry of Justice" },
   { icon: Taqeem, name: "Authority of Accredited Valuers" },
+  { icon: Alina, name: "Alinma Bank" },
+ 
 ];
 
 export default function LogoCarousel() {

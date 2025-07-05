@@ -13,7 +13,7 @@ const services = [
     id: "02",
     titleKey: "uxDesign",
     tagsKey: "uxTags",
-    descKey: "uxDescription",
+    descKey: "uxDesc",
     button: "discuss",
   },
   {

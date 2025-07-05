@@ -23,7 +23,7 @@ export default function AboutSection() {
           </p>
 
           {/* Stats */}
-          <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-6">
+          {/* <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-6">
             <div>
               <h3 className="text-2xl font-bold text-black">150+</h3>
               <p className="text-gray-500 text-sm">{t("projects")}</p>
@@ -40,7 +40,7 @@ export default function AboutSection() {
               <h3 className="text-2xl font-bold text-black">30</h3>
               <p className="text-gray-500 text-sm">{t("awards")}</p>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* Image Section */}
