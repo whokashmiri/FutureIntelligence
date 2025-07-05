@@ -77,7 +77,7 @@ export default function PricingPlans() {
                   <p className="text-sm text-gray-500">{planData.desc}</p>
                 </div>
 
-  {planData.price !== null ? (
+  {/* {planData.price !== null ? (
   <div className="text-3xl font-bold mb-4">
     <span className="inline-block">
       <span className="text-xs text-gray-700">ر.س </span>
@@ -89,7 +89,7 @@ export default function PricingPlans() {
   <h4 className="text-2xl font-bold text-gray-800 mb-4">
     {planData.label}
   </h4>
-)}
+)} */}
 
 
                 <ul className="text-sm text-gray-700 space-y-2 mb-6">

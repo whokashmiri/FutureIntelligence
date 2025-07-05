@@ -1,22 +1,20 @@
+/* eslint-disable no-unused-vars */
 import React, { useEffect, useRef } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
-import {
-  Atom,
-  Aperture,
-  Circle,
-  Flame,
-  Mountain,
-  Orbit,
-} from "lucide-react";
+
+import Rajhi from "../assets/logo-arb.png";
+import Alina from "../assets/alinma-logo.svg";
+import Logo from "../assets/Logo.png";
+import Rega from "../assets/REGA_LOGO.svg";
+import Taqeem from "../assets/Taqeem.svg";
 
 const logos = [
-  { icon: Atom, name: "Logipsum" },
-  { icon: Aperture, name: "Logoipsum" },
-  { icon: Circle, name: "logoipsum" },
-  { icon: Flame, name: "Logoipsum" },
-  { icon: Mountain, name: "Logoipsum" },
-  { icon: Orbit, name: "logoipsum" },
+  { icon: Rajhi, name: "Al-Rajhi Bank" },
+  { icon: Alina, name: "Alinma Bank" },
+  { icon: Logo, name: "Ministry of Justice" },
+  { icon: Rega, name: "Real Estate General Authority" },
+  { icon: Taqeem, name: "Authority of Accredited Valuers" },
 ];
 
 export default function LogoCarousel() {
@@ -38,34 +36,34 @@ export default function LogoCarousel() {
     },
   });
 
-  // Autoplay effect
   useEffect(() => {
     let interval;
     if (slider) {
       interval = setInterval(() => {
         slider.current?.next();
-      }, 2000); // move every 2 seconds
+      }, 2000);
     }
     return () => clearInterval(interval);
   }, [slider]);
 
   return (
-    <div className="w-full bg-gray-50 py-10 px-6">
+    <div className="w-full bg-gray-300 py-10 px-6">
       <div ref={sliderInstanceRef} className="keen-slider">
-        {logos.map((item, idx) => {
-          const Icon = item.icon;
-          return (
-            <div
-              key={idx}
-              className="keen-slider__slide flex flex-col items-center justify-center text-gray-700"
-            >
-              <div className="flex items-center space-x-2">
-                <Icon size={32} className="text-gray-700" />
-                <span className="text-lg font-medium">{item.name}</span>
-              </div>
+        {logos.map((item, idx) => (
+          <div
+            key={idx}
+            className="keen-slider__slide flex flex-col items-center justify-center text-gray-700"
+          >
+            <div className="flex flex-col items-center space-y-2">
+              <img
+                src={item.icon}
+                alt={item.name}
+                className="h-12 w-auto object-contain"
+              />
+              <span className="text-lg font-medium">{item.name}</span>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
     </div>
   );

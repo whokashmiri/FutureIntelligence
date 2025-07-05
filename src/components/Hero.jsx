@@ -27,7 +27,7 @@ const Hero = () => {
       <div className="absolute inset-0 flex items-center justify-center px-4 md:px-12 text-center z-30">
         <motion.h1
           initial={{ opacity: 0, y: 60, scale: 1 }}
-          animate={{ opacity: 1, y: 0, scale: 1.2 }}
+          animate={{ opacity: 1, y: 0, scale: 1.3 }}
           transition={{ duration: 1.2, ease: 'easeOut' }}
           className="text-white mix-blend-difference text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight max-w-[90vw] sm:max-w-[80vw] md:max-w-[70vw] xl:max-w-[60vw]"
           style={{ fontFamily: '"Quantico", sans-serif' }}
